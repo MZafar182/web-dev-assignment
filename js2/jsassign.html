@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jsassign.cs">
+</head>
+<body>
+    <h1> WELCOME TO GROCERY CALCULATION</h1>
+    <br>
+    <form>
+        <p id="a">ITEM PURCHASED</p>
+
+        <input type="text" id="n1"> 
+        <br><br><br>
+
+        <p id="b">QUANTITY</p>
+        <input type="text" id="n2">
+        <br><br><br>
+
+
+        <p id="c">ITEM CODE</p>
+        <input type="text" id="n3">
+        <br><br><br>
+
+        <p id="d">ITEM PRICE</p>
+        <input type="text" id="n4">
+        <br><br><br><br>
+
+
+        <button type="button" onclick="operation()">SUBMIT</button>
+        <br><br><br><br>
+
+        <p> TOTAL COST:<P id="ans">
+
+        </P> </p>
+        
+        <br><br><br><br>
+
+
+        
+
+    </form>
+
+    <br><br>
+    <div class="table">
+
+    <table border="" >
+        <tr>
+          <th>ITEM</th>
+          <th>QUANTITY</th>
+          <th>COST</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>1</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>1</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>1</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>1</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>1</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+
+        function operation(){
+
+           x= document.getElementById("n2").value;
+           y= document.getElementById("n4").value;
+           z=parseInt(x)*parseInt(y);
+           document.getElementById("ans").innerHTML=z;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

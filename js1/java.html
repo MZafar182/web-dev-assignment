@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+<p id="demo"></p>
+<p id="hover"> MOUSE HOVER ME
+</p>
+<p id="frame">
+
+</p>
+    <script>
+        function myfunction()
+        {
+          a=document.getElementById("n1").value;
+
+ 
+          b=document.getElementById("n2").value;
+          c=parseInt(a)+parseInt(b);
+          
+          document.getElementById("demo").innerHTML=c;
+        }
+
+        function myfunction2()
+        {
+            a=document.getElementById("n1").value;
+
+ 
+b=document.getElementById("n2").value;
+c=parseInt(a)*parseInt(b);
+
+document.getElementById("demo").innerHTML=c;  
+        }
+
+        function myfunction3()
+        {
+            a=document.getElementById("n1").value;
+
+ if(a%2==0)
+ alert("even");
+ else
+ alert("odd");
+        }
+
+        function myfunction4(){
+            a=document.getElementById("n1").value;
+        i=1;
+        while(i<=a)
+        {
+            document.writeln(i);
+            i=i+1;
+        }
+        }
+
+        function myfunction5(){
+
+            a=document.getElementById("n1").value;
+        i=1;
+        for(i=1;i<=a;i++)
+        {
+            document.writeln(i);
+        
+        }
+
+            
+        }
+
+        function myfunction6()
+        {
+            a=parseInt (document.getElementById("n1").value);
+            switch(a)
+            {
+                    case 0:
+                    document.writeln("given digit is zero");
+                    break;
+
+                    case 1:
+                    document.writeln("given digit is one");
+                    break;
+
+                    case 2:
+                    document.writeln("given digit is two");
+                    break;
+            }
+
+
+
+        }
+
+        function fact(){  
+          var i, num, f;  
+         f = 1;  
+         num=  document.getElementById("n1").value;  
+         for(i = 1; i <= num; i++)    
+         {  
+           f = f * i;  
+            }  
+          i = i - 1;    
+           alert( "The factorial of the number " + i + " is: " + f );  
+           } 
+           
+          
+
+           
+       
+           function myFun(id){
+            a=document.getElementById("n1").value
+            if(a){
+            switch (id) {
+  case "for3":
+    if (a%3==0){
+        alert("IT IS DIVISIBLE BY 3");
+    }
+    else{
+        alert("NOT DIVISIBLE BY 3");
+    }
+    break;
+
+    case "for4":
+    if (a%4==0){
+        alert("IT IS DIVISIBLE BY 4");
+    }
+    else{
+        alert("NOT DIVISIBLE BY 4");
+    }
+    break;
+
+    case "for5":
+    if (a%5==0){
+        alert("IT IS DIVISIBLE BY 5");
+    }
+    else{
+        alert("NOT DIVISIBLE BY 5");
+    }
+    break;
+
+
+    case "for6":
+    if (a%6==0){
+        alert("IT IS DIVISIBLE BY 6");
+    }
+    else{
+        alert("NOT DIVISIBLE BY 6");
+    }
+    break;
+
+
+    case "for7":
+    if (a%7==0){
+        alert("IT IS DIVISIBLE BY 7");
+    }
+    else{
+        alert("NOT DIVISIBLE BY 7");
+    }
+    break;
+
+
+    case "for8":
+    if (a%8==0){
+        alert("IT IS DIVISIBLE BY 8");
+    }
+    else{
+        alert("NOT DIVISIBLE BY 8");
+    }
+    break;
+
+    case "for9":
+    if (a%9==0){
+        alert("IT IS DIVISIBLE BY 9");
+    }
+    else{
+        alert("NOT DIVISIBLE BY 9");
+    }
+    break;
+
+
+}
+}
+        }
+
+        
+        function testVariable() 
+        {
+            var strText = document.getElementById("textone").value;          
+            var strText1 = document.getElementById("textTWO").value;
+            var result = strText + ' ' + strText1;
+            document.getElementById('demo').textContent = result;
+        }
+    
+
+    
+        function change();
+{
+    document.getElementById("demo").value="Close Curtain";
+
+
+
+}
+
+         function confirm();{
+
+            var frame=document.getElementById('frame')
+         }
+
+
+
+                
+
+
+
+            
+
+            
+
+
+
+
+
+         
+
+
+
+       
+
+   
+    </script>
+    <form>
+        <input type="text" id="n1"></input><br>
+       
+
+    </form>
+    <br>
+    <form action="">
+        <input type="text" id="textone">
+        <input type="text" id="textTWO">
+    </form>
+
+    <button type="button" onclick="myfunction()">ADD</button>
+    <br>
+    <button type="button" onclick="myfunction2()">MULTIPLY</button>
+    <br>
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button><br>
+    <button type="button" onclick="myfunction3()">check</button><br>
+    <button type="button" onclick="myfunction4()">whileloop</button><br>
+    <button type="button" onclick="myfunction5()">forloop</button><br>
+    <button type="button" onclick="myfunction6()">switch</button><br>
+    <button type="button" onclick="fact()">fact</button><br>
+    <button id="for3" onclick="myFun(this.id)">Click ME for 3</button>
+    <button id="for4" onclick="myFun(this.id)">Click ME for 4</button>
+    <button id="for5" onclick="myFun(this.id)">Click ME for 5</button>
+    <button id="for6" onclick="myFun(this.id)">Click ME for 6</button>
+    <button id="for7" onclick="myFun(this.id)">Click ME for 7</button>
+    <button id="for8" onclick="myFun(this.id)">Click ME for 8</button>
+    <button id="for9" onclick="myFun(this.id)">Click ME for 9</button>
+    <br><br>
+    <button onclick="testVariable()">Submit</button>
+    <input onclick="change()" type="button" value="Open Curtain" id="myButton1"></input>
+    <br><br><br><br>
+    <script src="java.js"></script>
+
+    <form onsubmit="confirm()" action="https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-html-forms-by-building-a-registration-form">
+    enter your name: </form>
+
+</body>
+</html>
